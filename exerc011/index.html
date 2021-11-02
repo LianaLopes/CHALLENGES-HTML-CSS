@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir seu site em vários dispositivos diferentes ou simplesmente aumenta e diminui o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Semtítulo1.png" type="image/png">
+        <source media="(max-width:  1050px)" srcset="imagens/Semtítulo2.png" type="image/png">
+        <img src="imagens/Semtítulo3.png" alt="Imagem flexível">
+    </picture> <!--Nunca deixar espaço no nome dos arquivos-->
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls> <!--se colocar o autodata o site  só funcionará quando o arquivo tiver sido totalmente baixado, já o metadata ele mostrarará as informações do arquivo como tamanho, data, etc, e em instantes ele tocará-->
+    <source src="midias/ReedMathis.mp3" type="audio/mpeg">
+    <source src="midias/ReedMathis.ogg" type="audio/ogg">
+    <source src="midias/ReedMathis.was" type="audio/was">
+    <p>Infelizmente seu navagedor não pode carregar a página então click aqui para donwload do mesmo <a href="midias/ReedMathis.mp3"> click aqui </a>para donwload do mesmo</p>
+</body>
+</html>
